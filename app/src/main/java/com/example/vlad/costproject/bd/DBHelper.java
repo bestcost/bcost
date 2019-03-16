@@ -24,12 +24,12 @@ public class DBHelper extends SQLiteOpenHelper{
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(  + TABLE_NAMES + "(" + KEY_ID + " integer primeri key , " +  KEY_NAME +" text "+ ")" );
+        db.execSQL( TABLE_NAMES +  KEY_ID  +  KEY_NAME );
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion){
-        db.execSQL("drop tabel if exists " + TABLE_NAMES);
+        db.execSQL(TABLE_NAMES);
 
         onCreate(db);
 
