@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_main"
+            android:title="@string/Menu_main" />
+        <item
+            android:id="@+id/nav_fastbuy"
+            android:title="@string/fastbuy" />
+        <item
+            android:id="@+id/nav_buylist"
+            android:title="@string/buylist" />
+        <item
+            android:id="@+id/nav_archive"
+
+            android:title="@string/archive" />
+    </group>
+
+
+
+</menu>
