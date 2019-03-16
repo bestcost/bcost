@@ -29,13 +29,6 @@ Button buttonBuyList;
 Button buttonFastBuy;
 
 
-Button buttonNameList;
-Button buttonClearList;
-Button buttonDeleteList;
-
-EditText nameList;
-
-DBHelper dbHelper;
 
 
     @Override
@@ -70,22 +63,8 @@ DBHelper dbHelper;
 
 
 
-                //название и удаление листов с покупками
-                setContentView(R.layout.content_buy_list_name);
 
-                buttonNameList = (Button) findViewById(R.id.buttonNameList);
-                buttonNameList.setOnClickListener(this);
 
-                buttonClearList = (Button) findViewById(R.id.buttonClearList);
-                buttonClearList.setOnClickListener(this);
-
-                buttonDeleteList= (Button) findViewById(R.id.buttonDeleteList);
-                buttonDeleteList.setOnClickListener(this);
-
-                nameList = (EditText) findViewById(R.id.nameList);
-
-                dbHelper = new DBHelper(this);
-                //
 
             }
         });
@@ -163,43 +142,6 @@ DBHelper dbHelper;
 
 
 
-    @Override
-    public void onClick(View v){
-
-        String nameListEdit = nameList.getText().toString();
-
-        SQLiteDatabase database = dbHelper.getWritableDatabase();
-
-        ContentValues contentValues = new ContentValues();
-
-        switch (v.getId()) {
-
-            case R.id.buttonNameList:
-                //дествия по нажатию buttonNameList
-
-                contentValues.put(DBHelper.KEY_NAME, nameListEdit);
-                database.insert(DBHelper.TABLE_NAMES, null, contentValues);
-
-                break;
-
-            case R.id.buttonClearList:
-                //дествия по нажатию buttonClearList
-
-                database.delete(DBHelper.TABLE_NAMES, null, null);
-
-                break;
-
-            case R.id.buttonDeleteList:
-                //дествия по нажатию кнопки buttonDeleteList
-
-                int delCount = database.delete(DBHelper.TABLE_NAMES, DBHelper.KEY_NAME + " = ", new String[]{nameListEdit});
-                Log.d("mLog", "delete list = " + delCount);
-
-                break;
-
-        }
-        dbHelper.close();
-    }
 
 
 }

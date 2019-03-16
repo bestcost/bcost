@@ -13,5 +13,6 @@
     <string name="newlist">Добавить</string>
     <string name="title_activity_buy_list">BuyListActivity</string>
     <string name="title_activity_fast_buy">FastBuyActivity</string>
+    <string name="title_activity_buy_list_name">BuyListName</string>
 
 </resources>

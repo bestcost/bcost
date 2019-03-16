@@ -27,6 +27,9 @@
             android:name=".FastBuyActivity"
             android:label="@string/title_activity_fast_buy"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".BuyListName"
+            android:label="@string/title_activity_buy_list_name"></activity>
     </application>
 
 </manifest>
