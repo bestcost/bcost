@@ -25,7 +25,7 @@ public class BuyListName extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.content_buy_list_name);
         nameList = (EditText) findViewById(R.id.nameList);
-        //dbHelper = new DBHelper(this);
+        dbHelper = new DBHelper(this);
 
         buttonNameList = (Button) findViewById(R.id.buttonNameList);
         buttonNameList.setOnClickListener(new View.OnClickListener() {

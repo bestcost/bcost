@@ -20,8 +20,8 @@ public class DBHelper extends SQLiteOpenHelper{
 
 
 
-    public DBHelper(View.OnClickListener context) {
-        super((Context) context,DATEBASE_NAME, null, DATEBASE_VERSION);
+    public DBHelper(Context context) {
+        super( context,DATEBASE_NAME, null, DATEBASE_VERSION);
     }
 
 

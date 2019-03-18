@@ -14,5 +14,9 @@
     <string name="title_activity_buy_list">BuyListActivity</string>
     <string name="title_activity_fast_buy">FastBuyActivity</string>
     <string name="title_activity_buy_list_name">BuyListName</string>
+    <string name="Name_list_add_name">Назовите новый список</string>
+    <string name="Buy_list_name_add">добавить</string>
+    <string name="Buy_list_name_clear">очистить</string>
+    <string name="Buy_list_name_Delete">Удалить</string>
 
 </resources>
