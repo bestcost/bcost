@@ -5,6 +5,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.view.View;
 
+import com.example.vlad.costproject.BuyListName;
+
 public class DBHelper extends SQLiteOpenHelper{
 
 
@@ -16,9 +18,12 @@ public class DBHelper extends SQLiteOpenHelper{
     public static final String KEY_NAME = "name";
 
 
-    public DBHelper(View.OnClickListener context) {
-        super((Context) context,DATEBASE_NAME, null, DATEBASE_VERSION);
+
+
+    public DBHelper(Context context) {
+        super( context,DATEBASE_NAME, null, DATEBASE_VERSION);
     }
+
 
 
 

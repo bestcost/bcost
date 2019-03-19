@@ -15,19 +15,17 @@
         android:layout_marginTop="66dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name List" />
+        android:hint="@string/Name_list_add_name" />
 
     <Button
         android:id="@+id/buttonNameList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="159dp"
-        android:text="добавить" />
+
+        android:layout_centerVertical="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="58dp"
+        android:text="@string/Buy_list_name_add" />
 
     <Button
         android:id="@+id/buttonClearList"
@@ -36,10 +34,10 @@
         android:layout_alignTop="@+id/buttonNameList"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="-2dp"
-        android:layout_marginEnd="135dp"
-        android:layout_marginRight="135dp"
-        android:text="clear" />
+        android:layout_marginTop="-3dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginRight="142dp"
+        android:text="@string/Buy_list_name_clear" />
 
 
     <Button
@@ -47,9 +45,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/buttonClearList"
+        android:layout_alignLeft="@+id/buttonClearList"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="119dp"
-        android:layout_marginTop="153dp"
-        android:text="Delete" />
+        android:layout_marginStart="113dp"
+        android:layout_marginLeft="113dp"
+        android:layout_marginTop="230dp"
+        android:text="@string/Buy_list_name_Delete" />
 
 </RelativeLayout>
