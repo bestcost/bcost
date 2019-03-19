@@ -29,7 +29,7 @@ public class DBHelper extends SQLiteOpenHelper{
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL( TABLE_NAMES +  KEY_ID  +  KEY_NAME );
+        db.execSQL("");
     }
 
     @Override
@@ -37,6 +37,5 @@ public class DBHelper extends SQLiteOpenHelper{
         db.execSQL(TABLE_NAMES);
 
         onCreate(db);
-
     }
 }
